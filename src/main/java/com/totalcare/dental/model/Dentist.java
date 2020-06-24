@@ -1,4 +1,4 @@
-package model;
+package com.totalcare.dental.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Patient extends Person
+public class Dentist extends Person
 {
-
+    private Integer experience;
 }

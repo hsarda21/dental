@@ -1,4 +1,4 @@
-package model;
+package com.totalcare.dental.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
