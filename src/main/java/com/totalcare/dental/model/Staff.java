@@ -6,16 +6,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import java.util.Set;
 
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-public class Patient extends Person
+public class Staff extends Person
 {
-    @OneToMany(mappedBy = "patient")
-    Set<Visit> visits;
+    private Long salary;
+    private Integer workingYears;
 }

@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -15,4 +17,7 @@ import javax.persistence.Entity;
 public class Dentist extends Person
 {
     private Integer experience;
+
+    @OneToMany(mappedBy = "dentist")
+    private Set<Visit> visits;
 }
